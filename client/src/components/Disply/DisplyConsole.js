@@ -4,7 +4,7 @@ import { DisplyCapsules, DisplyLandingPad } from '../styles';
 import { connect } from 'react-redux';
 import { Capsule } from './Capsule' ;
 import { LandingPad } from './LandingPad';
-import { CapsulesUTCSort } from '../../utils/CapsulesUTCSort';
+import { sortCapsules } from '../../utils/sortCapsules';
 
 const WrapperDisply = styled.div`
     padding: 1em;
@@ -22,7 +22,7 @@ const WrapperDisply = styled.div`
 `;
 
 const DisplyConsole = ({landingPad, capsules}) =>{
-    const sortedCapsules = CapsulesUTCSort(capsules);
+    const sortedCapsules = sortCapsules(capsules);
     const Capsules = sortedCapsules && sortedCapsules.map(capsule => <Capsule key={capsule.capsule_serial} item={capsule} />)
     return (
       <WrapperDisply>
