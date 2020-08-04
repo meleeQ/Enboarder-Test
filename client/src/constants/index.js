@@ -1,0 +1,3 @@
+export const GET_LANDINGPAD = 'GET_LANDINGPAD'
+export const GET_CAPSULES = 'GET_CAPSULES'
+export const GET_ERRORS = 'GET_ERRORS'
