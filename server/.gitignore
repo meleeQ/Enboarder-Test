@@ -1,0 +1,15 @@
+# Logs
+logs
+*.log
+
+# Dependency directory
+node_modules
+
+# Ignore .DS_Store files on OS X
+.DS_Store
+
+.idea
+.env
+package-lock.json
+dist
+.vscode/settings.json
